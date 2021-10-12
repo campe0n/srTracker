@@ -1,36 +1,27 @@
-import './App.css';
+import "./App.css";
 
-let platform
-let battletag
-let region
+import Header from "./components/Header";
 
-// getData = () => {
-// fetch(https://ow-api.com/v1/stats/`${platform}`/`${region}`/`${battletag}`/profile)
-//  const response = fetch('https://ow-api.com/v1/stats/pc/us/champion-12648/profile')
-//     .then(res = res.json)
-//     .then(data => console.log(data))
-// }
+import Home from "./pages/Home";
+import Stats from "./pages/Stats";
 
-// getData()
-
-async function postData() {
-    const response = await fetch('https://ow-api.com/v1/stats/pc/us/champion-12648/profile', {
-        method: 'GET',
-    })
-    return response.json();
-}
-
-postData()
-.then(data => {
-    console.log(data)
-})
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-      <div>
-          <h1>Melvin</h1>
-      </div>
+    <Router>
+      <Header />
+      <section>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/stats" component={Stats} />
+        </Switch>
+      </section>
+      <footer>
+        <h2>Made by Melvin Finn</h2>
+        <p>Made with love</p>
+      </footer>
+    </Router>
   );
 }
 

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: orange;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+section {
+  background-color: white;
+  width: 100%;
+  height: 90%;
+}
+
+footer {
+  background-color: gray;
+  width: 100%;
+  height: 5%;
+}
+
+/* TEXT */
+h1 {
+  margin: 0 0 0 1rem;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 1rem 0 0;
+}
+
+/* page */
+.page {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
