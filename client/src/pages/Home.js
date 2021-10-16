@@ -1,4 +1,6 @@
-export default function Home() {
+import React from "react";
+
+function Home() {
   return (
     <div className="page">
       <h2>Welcome to SR tracker</h2>
@@ -12,7 +14,10 @@ export default function Home() {
           Number
           <input type="text"></input>
         </label>
+        <input type="submit" value="submit"></input>
       </form>
     </div>
   );
 }
+
+export default Home;
