@@ -10,9 +10,6 @@ export default function Header() {
           <a href="profile">
             <li>Profile</li>
           </a>
-          <a href="hero">
-            <li>Hero</li>
-          </a>
         </ul>
       </nav>
     </header>
